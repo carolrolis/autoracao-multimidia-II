@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulários</title>
+  </head>
+  <body>
+    <form id="form-1">
+      <section id="botoes-section">
+        <h1>Botões</h1>
+        <label for="name"></label>
+        <input type="text" id="name" name="name" placeholder="Nome" />
+        <br />
+
+        <label for="email"></label>
+        <input type="email" id="email" name="email" placeholder="Email" />
+        <br /><br />
+
+        <button type="submit">Botão de enviar (submit)</button>
+        <button type="reset">Botão de limpar (reset)</button>
+        <button type="button" onclick="alert('Apenas um botão!')">
+          Botão simples (button)
+        </button>
+      </section>
+
+      <section id="select-section">
+        <h1>Select (dropdown)</h1>
+        <h3>> Select sem limite de tamanho</h3>
+        <label for="carros">Escolha um carro:</label>
+        <select id="carros" name="carros">
+          <option value="volvo">Volvo</option>
+          <option value="saab">Saab</option>
+          <option value="fiat">Fiat</option>
+          <option value="audi">Audi</option>
+        </select>
+        <h3>> Select com limite de tamanho</h3>
+        <p>
+          O atributo "size" faz com que apareça mais de uma opção no display da
+          lista
+        </p>
+        <label for="carros2">Escolha um carro:</label>
+        <select id="carros2" name="carros2" size="2">
+          <option value="volkswagen">Volkswagen</option>
+          <option value="byd">BYD</option>
+          <option value="opala">Opala</option>
+          <option value="ford">Ford</option>
+        </select>
+        <h3>> Select múltipla seleção</h3>
+        <p>
+          O atributo "multiple" faz com que possa escolher mais de uma opção na
+          lista.
+        </p>
+        <label for="carros3">Escolha um carro:</label>
+        <select id="carros3" name="carros3" size="2" multiple>
+          <option value="volkswagen">Volkswagen</option>
+          <option value="byd">BYD</option>
+          <option value="opala">Opala</option>
+          <option value="ford">Ford</option>
+        </select>
+      </section>
+
+      <section id="textarea-section">
+        <h1>Textarea</h1>
+        <textarea name="mensagem" id="mensagem" rows="5" cols="20">
+Oie</textarea
+        >
+      </section>
+
+      <section id="fieldset-section">
+        <h1>Fieldset e Legend</h1>
+        <fieldset>
+          <legend>Personal Data</legend>
+          <label for="first-name"></label>
+          <input
+            type="text"
+            id="first-name"
+            name="first-name"
+            placeholder="First Name"
+          />
+          <br />
+          <label for="last-name"></label>
+          <input
+            type="text"
+            id="last-name"
+            name="last-name"
+            placeholder="Last name"
+          />
+          <br /><br />
+          <button type="submit">Submit</button>
+        </fieldset>
+      </section>
+      <section id="input-section">
+        <h1>Inputs</h1>
+        <input type="text" placeholder="Type text" />
+        <br />
+        <input type="radio" />Type radio
+        <br />
+        <input type="checkbox" /> Type checkbox
+        <br />
+        <input type="submit" /> Type submit
+        <br />
+        <input type="button" /> Type button
+        <br />
+        <input type="password" /> Type password
+        <br />
+        <input type="reset" /> Type reset
+        <br />
+        <input type="color" /> Type color
+        <br />
+        <input type="range" /> Type range
+        <br />
+        <input type="date" /> Type date
+        <br />
+        <input type="email" /> Type email
+        <br />
+        <input type="file" /> Type file
+        <br>
+        <input type="search"> Type search
+
+        <h3>> Input patterns</h3>
+      </section>
+    </form>
+  </body>
+</html>
